@@ -1,0 +1,17 @@
+{% if order.metafields.xchrealm.xchange_reserveferr %}
+{% assign xchrealm = order.metafields.xchrealm %}
+{% assign key = 'xchange_reserveferr' %}
+<br><ul><li><b style='color: red;'>{{ xchrealm.xchange_reserveferr }}</b></li></ul>
+{% endif %}
+
+{% if order.metafields.xchrealm.xchange_emailerrmsg %}
+{% assign xchrealm = order.metafields.xchrealm %}
+{% assign key = 'xchange_emailerrmsg' %}
+<br><ul><li><b style='color: red;'>{{ xchrealm.xchange_emailerrmsg }}</b></li></ul>
+{% endif %}
+
+{% if order.metafields.xchrealm.xchange_license_info %}
+{% assign xchrealm = order.metafields.xchrealm %}
+{% assign key = 'xchange_license_info' %}
+<br><ul><li><b style='color: red;'>{{ xchrealm.xchange_license_info }}</b></li></ul>
+{% endif %}

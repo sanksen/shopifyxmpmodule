@@ -1,0 +1,9 @@
+Please place the following code where you want the XCHANGE License Info to be shown for your customer in the Order Details page.
+
+<!--- Reveal XCHANGE License Info --->
+{% if order.metafields.xchrealm.xchange_license_info %}
+{% assign xchrealm = order.metafields.xchrealm %}
+{% assign key = 'xchange_license_info' %}
+<br><ul style="background: aliceblue; padding: 50px;"><li><p style='color: red;'>{{ xchrealm.xchange_license_info }}</p></li></ul>
+{% endif %}
+<!--- --->
